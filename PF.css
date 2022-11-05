@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Abyssinica SIL", serif;
+}
+.body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/myProjects/individualProject/images/portFolioBackground.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*Nav-Bar*/
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  background: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+}
+nav ul li {
+  color: white;
+  display: inline;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav ul li:hover {
+  color: black;
+  background-color: white;
+  font-weight: bolder;
+  transition: 0.6s;
+  box-shadow: 0 0 10px white;
+}
+/*Home Page*/
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+}
+.name h1 {
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  margin-right: 40px;
+}
+.name img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.profile button {
+  padding: 20px 45px;
+  margin-top: 40px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+  font-weight: bolder;
+}
+.profile button:hover {
+  color: black;
+  background-color: rgb(153, 243, 50);
+  transition: 0.6s;
+  box-shadow: 0 0 10px white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*About Me*/
+#section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section2 h2 {
+  color: rgb(250, 100, 125);
+  font-size: 50px;
+}
+.aboutContent {
+  display: flex;
+  width: 100vw;
+}
+.img {
+  width: 36vw;
+
+}
+.img img {
+  width: 500px;
+  height: 100vh;
+ object-fit: contain;
+box-shadow: 0 0 25px black;
+}
+.about {
+  width: 60vw;
+  margin-left: 30px;
+  top: 50%;
+}
+.about h3 {
+  padding: 20px;
+  font-size: 30px;
+}
+.about p{
+  word-spacing: 5px;
+  line-height: 30px;
+}
+.about p a:hover{
+  color: rgb(250, 100, 125);
+}
+
+/*Portfolio*/
+#portfolio{
+display: flex;
+flex-direction: column;
+color: #fff;
+align-items: center;
+padding: 20px;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+}
+.projects img{
+  margin: 15px;
+width: 360px;
+height: 240px;
+}
+.projects img:hover{
+  transform: scale(1.2);
+  box-shadow: 0 0 10px white;
+}
+.projects p{
+  margin-top: 20px;
+}
+.projects a{
+  color: #fff;
+}
+.projects a:hover{
+color: rgb(250, 100, 125);
+}
+.resume{
+  font-size: larger;
+  margin-top: 40px;
+  font-weight: 900;
+}
+.resume a{
+  color: blue;
+}
+.resume a:hover{
+  color: #000;
+}
+.resume a:active{
+  font-size: 18px;
+}
+
+/*Services*/
+.heading4 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
+  color: rgb(250, 100, 125);
+}
+#services {
+  width: 100vw;
+  display: flex;
+  height: 80vh;
+  justify-content: space-evenly;
+  margin: 30px;
+  padding: 20px;
+}
+#services h3 {
+  font-size: 40px;
+}
+.webDev {
+  margin: 20px;
+  border: 1px solid black;
+  width: 23vw;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(to top, rgb(250, 100, 125) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.6s;
+}
+
+.webDev:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px rgb(250, 100, 125);
+}
+.webDev p{
+  margin-top: 40px;
+}
+.webDev img{
+  width: 200px;
+  height: auto;
+  margin-top: 40px;
+}
+.creativity {
+  margin: 20px;
+  border: 1px solid black;
+  width: 23vw;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(to top, rgb(250, 100, 125) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.6s;
+}
+.creativity:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px rgb(250, 100, 125);
+}
+.creativity p{
+margin-top: 90px;
+}
+.creativity img{
+  width: 130px;
+}
+.responsive {
+  margin: 20px;
+  border: 1px solid black;
+  width: 23vw;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(to top, rgb(250, 100, 125) 50%, white 50%);
+  background-size: 100% 200%;
+  transition: all 0.6s;
+}
+.responsive:hover {
+  background-position: left bottom;
+  color: white;
+  border: none;
+  box-shadow: 0 0 20px rgb(250, 100, 125);
+}
+.responsive p{
+  margin-top: 40px;
+}
+.responsive img{
+  width: 130px;
+}
+
+/*CONTACT*/
+#contact h3 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 50px;
+  color: rgb(250, 100, 125);
+}
+.reachMe{
+  background: #24262b;
+  width: 100vw;
+  color: rgb(250, 100, 125);
+}
+.reachMe li{
+list-style: none;
+}
+.reachMe{
+  padding: 70px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reachMe h2{
+  color: #fff;
+}
+.reachMe a{
+  color: rgb(250, 100, 125);
+}
+.firstCol ul li{
+margin: 7px;
+}
+.firstCol .fab{
+  color: rgb(236, 241, 247);
+}
+
+.secondCol ul li{
+  margin: 7px;
+  }
+.reachMe a:hover{
+  color: #fff;
+}
+.reachMe a:active{
+  font-size: 15px;
+}
+
+/*MEDIA QUERRIES*/
+
+@media screen and (max-width: 500px){
+  *{
+    width: 100%;
+  }
+  /*NAV*/
+
+  /*HOME*/
+.name .profile{
+  left: 0%;
+  top: 50%;
+}
+  .name h1 {
+    font-size: 40px;
+  }
+  .name img {
+   margin-top: 30px;
+  }
+
+  /*ABOUT*/
+.img img {
+  width: 100vw;
+  height: auto;
+}
+#section2 h2{
+  text-align: center;
+  font-size: 35px;
+}
+.aboutContent{
+  display: inline;
+  width: 100vw;
+}
+.about {
+  width: 100%;
+  margin-left: 15px;
+}
+.about p{
+  word-spacing: 0px;
+  line-height: 30px;
+  width: 90vw;
+}
+
+/*PORTFOLIO*/
+.projects img{
+margin: 15px;
+width: 90%;
+height: auto;
+}
+.heading4{
+  font-size: 35px;
+}
+
+/*SERVICES*/
+
+#services{
+    display: inline;
+  }
+#services div{
+    width: 90%;
+  }
+
+/*CONTACT*/
+#contact h3{
+font-size: 35px;
+}
+.reachMe{
+  justify-content: space-evenly;
+  padding: 5%;
+}
+.empty{
+ width: 5vw;
+}
+.firstCol{
+  margin: 5%;
+}
+.secondCol{
+  margin: 5%;
+}
+
+}
